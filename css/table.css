@@ -1,0 +1,22 @@
+table{
+    margin: 0 auto 20px;
+}
+td,th{
+    padding: 4px;
+}
+#tblOne{
+    width: 100%;
+}
+#tblTwo{
+    width: 60%;
+}
+#tblThree{
+    width: 60%;
+}
+
+#tblThree td{
+    vertical-align: top;
+}
+#tblThree th{
+    text-align: left;
+ }
