@@ -1,0 +1,23 @@
+.wrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+fieldset {
+    margin: 10px 0;
+}
+fieldset p, legend {
+    font-weight: bold;
+}
+fieldset p i{
+    font-weight: normal;
+}
+input {
+    margin-bottom: 6px;
+}
+input[placeholder]{
+    width: 190px;
+}
+textarea {
+    margin-bottom: 10px;
+    max-width: 760px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Turkevich_Vitaliy_hm_03_p1</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="wrapper"><H1>Урок "Формы": теги и их атрибуты.</H1>
+<H2>Расскажите немного о себе...</H2>
+<p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные. </p>
+<form id="form" action="handler.php" method="get">
+
+    <fieldset>
+        <legend>Коротко о себе</legend>
+        Имя: <input type="text" name="name"><br>
+        Фамилия: <input type="text" name="lastName"><br>
+        Пол: <input type="radio" name="sex">мужской<input type="radio" name="sex">женский<br>
+        Возраст: <input type="text"> лет
+    </fieldset>
+
+    <fieldset>
+        <legend>Подробно о себе</legend>
+
+        <input type="radio" name="aboutUs"> Молодой человек <br>
+        <input type="radio" name="aboutUs"> Девушка <br>
+
+        <input type="text" name="aboutUs1"> Дата рождения<br>
+        <input type="text" name="aboutUs2"> Семейное положение<br>
+        <input type="text" name="aboutUs3"> Социальный статус<br>
+        <input type="text" name="aboutUs4"> Местожительство<br>
+
+        <p>Что вы обычно делаете на выходных:</p>  <!--What are you doing (wrud)-->
+
+        <input type="checkbox" name="wrud1"> Сплю<br>
+        <input type="checkbox" name="wrud2"> Гуляю с друзьями<br>
+        <input type="checkbox" name="wrud3"> Хожу на рыбалку<br>
+        <input type="checkbox" name="wrud4"> Играю в игры<br>
+
+        <p>Рассказать о формах в книге, посвященной HTML:</p>
+
+        <select name="toldAboutForms" id="toldAbout">
+            <option value="toldAbout">Site frequency</option>
+        </select>
+
+        <p>Сколько книг вы прочитали за свою жизнь:</p> <!-- How many books have you read  hmbhur-->
+
+        <input type="radio" name="hmbhur"> 0-10<br>
+        <input type="radio" name="hmbhur"> 11-20<br>
+        <input type="radio" name="hmbhur"> 21-50<br>
+        <input type="radio" name="hmbhur"> 50+<br>
+
+        <p>Ваши комментарии:</p>
+
+        <textarea name="comments" id="commentsArea" cols="50" rows="7" ></textarea> <br>
+
+
+        <select name="position" id="position" size="3">
+            <option value="1p">Первая позиция</option>
+            <option value="2p">Вторая позиция</option>
+            <option value="3p">Третья позиция</option>
+        </select>
+
+    </fieldset>
+    
+    <fieldset>
+        <legend>И в заключении</legend>  <!-- Finally -->
+        <input type="text" placeholder="Это поле было введено для вас">
+        <p>Email:</p>
+        <input type="email">
+        <p>Хотите подписаться на самую модную рассылку спама?<br><i>Выберите категории</i></p>
+
+        <input type="checkbox" name="spam1"> Оборудование<br>
+        <input type="checkbox" name="spam2"> Как приготовить обеды<br>
+        <input type="checkbox" name="spam3"> Заработай миллион за два дня!<br>
+
+        <p>На сколько сложная задача:</p> <!-- is this task difficult?  itd -->
+        <input type="radio" name="itd"> Совсем нет<br>
+        <input type="radio" name="itd"> Так себе<br>
+        <input type="radio" name="itd"> Еле справились<br>
+    </fieldset>
+    <input type="button" value="Отправить">
+</form></div>
+</body>
+</html>
