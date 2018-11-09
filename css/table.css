@@ -4,7 +4,7 @@ table{
 td,th{
     padding: 4px;
     margin: 1px;
-    border: 1px solid grey;
+    border: 1px outset grey ;
 }
 #tblOne{
     width: 100%;
@@ -18,7 +18,7 @@ td,th{
     width: 60%;
     border: 2px solid grey;
     border-spacing: 0;
-    /*border-collapse: collapse;*/
+    border-collapse: collapse;
 
 }
 
