@@ -6,80 +6,84 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-<div class="wrapper"><H1>Урок "Формы": теги и их атрибуты.</H1>
-<H2>Расскажите немного о себе...</H2>
-<p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные. </p>
-<form id="form" action="handler.php" method="get">
+<div class="wrapper">
+    <h1>Урок "Формы": теги и их атрибуты.</h1>
+    <h2>Расскажите немного о себе...</h2>
+    <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные. </p>
+    <form id="form" action="#" method="get">
 
-    <fieldset>
-        <legend>Коротко о себе</legend>
-        Имя: <input type="text" name="name"><br>
-        Фамилия: <input type="text" name="lastName"><br>
-        Пол: <input type="radio" name="sex">мужской<input type="radio" name="sex">женский<br>
-        Возраст: <input type="text"> лет
-    </fieldset>
+        <fieldset>
+            <legend>Коротко о себе</legend>
+            <label>Имя: <input type="text" name="name"></label><br>
+            <label>Фамилия: <input type="text" name="lastName"></label><br>
+            Пол: <label><input type="radio" name="sex" value="m">мужской</label>
+            <label><input type="radio" name="sex" value="fm">женский</label><br>
+            <label>Возраст: <input type="number" min="0" max="122"> лет</label>
+            <!-- Thanks Jeanne Calment for the longest confirmed human lifespan of 122 years (according to the Guinness Book of Records)-->
+        </fieldset>
 
-    <fieldset>
-        <legend>Подробно о себе</legend>
+        <fieldset>
+            <legend>Подробно о себе</legend>
 
-        <input type="radio" name="aboutUs"> Молодой человек <br>
-        <input type="radio" name="aboutUs"> Девушка <br>
+            <label><input type="radio" name="aboutUs" value="Man"> Молодой человек</label><br>
+            <label><input type="radio" name="aboutUs" value="Woman"> Девушка</label><br>
 
-        <input type="text" name="aboutUs1"> Дата рождения<br>
-        <input type="text" name="aboutUs2"> Семейное положение<br>
-        <input type="text" name="aboutUs3"> Социальный статус<br>
-        <input type="text" name="aboutUs4"> Местожительство<br>
+            <label><input type="date" name="aboutUs1"> Дата рождения</label><br>
+            <label><input type="text" name="aboutUs2"> Семейное положение</label><br>
+            <label><input type="text" name="aboutUs3"> Социальный статус</label><br>
+            <label><input type="text" name="aboutUs4"> Местожительство</label><br>
 
-        <p>Что вы обычно делаете на выходных:</p>  <!--What are you doing (wrud)-->
+            <p>Что вы обычно делаете на выходных:</p>  <!--What are you doing (wrud)-->
 
-        <input type="checkbox" name="wrud1"> Сплю<br>
-        <input type="checkbox" name="wrud2"> Гуляю с друзьями<br>
-        <input type="checkbox" name="wrud3"> Хожу на рыбалку<br>
-        <input type="checkbox" name="wrud4"> Играю в игры<br>
+            <label><input type="checkbox" name="wrud1"> Сплю</label><br>
+            <label><input type="checkbox" name="wrud2"> Гуляю с друзьями</label><br>
+            <label><input type="checkbox" name="wrud3"> Хожу на рыбалку</label><br>
+            <label><input type="checkbox" name="wrud4"> Играю в игры</label><br>
 
-        <p>Рассказать о формах в книге, посвященной HTML:</p>
+            <p>Рассказать о формах в книге, посвященной HTML:</p>
 
-        <select name="toldAboutForms" id="toldAbout">
-            <option value="toldAbout">Site frequency</option>
-        </select>
+            <select name="toldAboutForms" id="toldAbout" title="taf">
+                <option value="toldAbout">Site frequency</option>
+            </select>
 
-        <p>Сколько книг вы прочитали за свою жизнь:</p> <!-- How many books have you read  hmbhur-->
+            <p>Сколько книг вы прочитали за свою жизнь:</p> <!-- How many books have you read  hmbhur-->
 
-        <input type="radio" name="hmbhur"> 0-10<br>
-        <input type="radio" name="hmbhur"> 11-20<br>
-        <input type="radio" name="hmbhur"> 21-50<br>
-        <input type="radio" name="hmbhur"> 50+<br>
+            <label><input type="radio" name="hmbhur"> 0-10</label><br>
+            <label><input type="radio" name="hmbhur"> 11-20</label><br>
+            <label><input type="radio" name="hmbhur"> 21-50</label><br>
+            <label><input type="radio" name="hmbhur"> 50+</label><br>
 
-        <p>Ваши комментарии:</p>
+            <p>Ваши комментарии:</p>
 
-        <textarea name="comments" id="commentsArea" cols="50" rows="7" ></textarea> <br>
+            <textarea name="comments" id="commentsArea" cols="50" rows="7" title="Text Area"></textarea><br>
 
 
-        <select name="position" id="position" size="3">
-            <option value="1p">Первая позиция</option>
-            <option value="2p">Вторая позиция</option>
-            <option value="3p">Третья позиция</option>
-        </select>
+            <select name="position" id="position" size="3" title="position">
+                <option value="1p">Первая позиция</option>
+                <option value="2p">Вторая позиция</option>
+                <option value="3p">Третья позиция</option>
+            </select>
 
-    </fieldset>
-    
-    <fieldset>
-        <legend>И в заключении</legend>  <!-- Finally -->
-        <input type="text" placeholder="Это поле было введено для вас">
-        <p>Email:</p>
-        <input type="email">
-        <p>Хотите подписаться на самую модную рассылку спама?<br><i>Выберите категории</i></p>
+        </fieldset>
 
-        <input type="checkbox" name="spam1"> Оборудование<br>
-        <input type="checkbox" name="spam2"> Как приготовить обеды<br>
-        <input type="checkbox" name="spam3"> Заработай миллион за два дня!<br>
+        <fieldset>
+            <legend>И в заключении</legend>  <!-- Finally -->
+            <input type="text" placeholder="Это поле было введено для вас">
+            <p>Email:</p>
+            <input type="email" title="email">
+            <p>Хотите подписаться на самую модную рассылку спама?<br><i>Выберите категории</i></p>
 
-        <p>На сколько сложная задача:</p> <!-- is this task difficult?  itd -->
-        <input type="radio" name="itd"> Совсем нет<br>
-        <input type="radio" name="itd"> Так себе<br>
-        <input type="radio" name="itd"> Еле справились<br>
-    </fieldset>
-    <input type="button" value="Отправить">
-</form></div>
+            <label><input type="checkbox" name="spam1"> Оборудование</label><br>
+            <label><input type="checkbox" name="spam2"> Как приготовить обеды</label><br>
+            <label><input type="checkbox" name="spam3"> Заработай миллион за два дня!</label><br>
+
+            <p>На сколько сложная задача:</p> <!-- is this task difficult?  itd -->
+            <label><input type="radio" name="task" value="easy"> Совсем нет</label><br>
+            <label><input type="radio" name="task" value="mid"> Так себе</label><br>
+            <label><input type="radio" name="task" value="hard"> Еле справились</label><br>
+        </fieldset>
+        <input type="submit" value="Отправить">
+    </form>
+</div>
 </body>
 </html>
