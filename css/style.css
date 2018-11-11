@@ -2,8 +2,13 @@
     margin: 0 auto;
     width: 800px;
 }
+
 fieldset {
+    position: relative;
     margin: 10px 0;
+}
+label, textarea, i{
+    display: block;
 }
 fieldset p, legend {
     font-weight: bold;
@@ -20,4 +25,8 @@ input[placeholder]{
 textarea {
     margin-bottom: 10px;
     max-width: 760px;
+}
+
+.inline {
+    display: inline;
 }

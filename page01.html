@@ -14,10 +14,10 @@
 
         <fieldset>
             <legend>Коротко о себе</legend>
-            <label>Имя: <input type="text" name="name"></label><br>
-            <label>Фамилия: <input type="text" name="lastName"></label><br>
-            Пол: <label><input type="radio" name="sex" value="m">мужской</label>
-            <label><input type="radio" name="sex" value="fm">женский</label><br>
+            <label>Имя: <input type="text" name="name"></label>
+            <label>Фамилия: <input type="text" name="lastName"></label>
+            Пол: <label class="inline"><input type="radio" name="sex" value="m">мужской</label>
+            <label class="inline"><input type="radio" name="sex" value="fm">женский</label>
             <label>Возраст: <input type="number" min="0" max="122"> лет</label>
             <!-- Thanks Jeanne Calment for the longest confirmed human lifespan of 122 years (according to the Guinness Book of Records)-->
         </fieldset>
@@ -25,20 +25,20 @@
         <fieldset>
             <legend>Подробно о себе</legend>
 
-            <label><input type="radio" name="aboutUs" value="Man"> Молодой человек</label><br>
-            <label><input type="radio" name="aboutUs" value="Woman"> Девушка</label><br>
+            <label><input type="radio" name="aboutUs" value="Man"> Молодой человек</label>
+            <label><input type="radio" name="aboutUs" value="Woman"> Девушка</label>
 
-            <label><input type="date" name="aboutUs1"> Дата рождения</label><br>
-            <label><input type="text" name="aboutUs2"> Семейное положение</label><br>
-            <label><input type="text" name="aboutUs3"> Социальный статус</label><br>
-            <label><input type="text" name="aboutUs4"> Местожительство</label><br>
+            <label><input type="date" name="aboutUs1"> Дата рождения</label>
+            <label><input type="text" name="aboutUs2"> Семейное положение</label>
+            <label><input type="text" name="aboutUs3"> Социальный статус</label>
+            <label><input type="text" name="aboutUs4"> Местожительство</label>
 
             <p>Что вы обычно делаете на выходных:</p>  <!--What are you doing (wrud)-->
 
-            <label><input type="checkbox" name="wrud1"> Сплю</label><br>
-            <label><input type="checkbox" name="wrud2"> Гуляю с друзьями</label><br>
-            <label><input type="checkbox" name="wrud3"> Хожу на рыбалку</label><br>
-            <label><input type="checkbox" name="wrud4"> Играю в игры</label><br>
+            <label><input type="checkbox" name="wrud1"> Сплю</label>
+            <label><input type="checkbox" name="wrud2"> Гуляю с друзьями</label>
+            <label><input type="checkbox" name="wrud3"> Хожу на рыбалку</label>
+            <label><input type="checkbox" name="wrud4"> Играю в игры</label>
 
             <p>Рассказать о формах в книге, посвященной HTML:</p>
 
@@ -48,14 +48,14 @@
 
             <p>Сколько книг вы прочитали за свою жизнь:</p> <!-- How many books have you read  hmbhur-->
 
-            <label><input type="radio" name="hmbhur" value="10"> 0-10</label><br>
-            <label><input type="radio" name="hmbhur" value="20"> 11-20</label><br>
-            <label><input type="radio" name="hmbhur" value="30"> 21-50</label><br>
-            <label><input type="radio" name="hmbhur" value="40"> 50+</label><br>
+            <label><input type="radio" name="hmbhur" value="10"> 0-10</label>
+            <label><input type="radio" name="hmbhur" value="20"> 11-20</label>
+            <label><input type="radio" name="hmbhur" value="30"> 21-50</label>
+            <label><input type="radio" name="hmbhur" value="40"> 50+</label>
 
             <p>Ваши комментарии:</p>
 
-            <textarea name="comments" id="commentsArea" cols="50" rows="7" title="Text Area"></textarea><br>
+            <textarea name="comments" id="commentsArea" cols="50" rows="7" title="Text Area"></textarea>
 
 
             <select name="position" id="position" size="3" title="position">
@@ -71,16 +71,16 @@
             <input type="text" placeholder="Это поле было введено для вас">
             <p>Email:</p>
             <input type="email" title="email">
-            <p>Хотите подписаться на самую модную рассылку спама?<br><i>Выберите категории</i></p>
+            <p>Хотите подписаться на самую модную рассылку спама?<i>Выберите категории</i></p>
 
-            <label><input type="checkbox" name="spam1"> Оборудование</label><br>
-            <label><input type="checkbox" name="spam2"> Как приготовить обеды</label><br>
-            <label><input type="checkbox" name="spam3"> Заработай миллион за два дня!</label><br>
+            <label><input type="checkbox" name="spam1"> Оборудование</label>
+            <label><input type="checkbox" name="spam2"> Как приготовить обеды</label>
+            <label><input type="checkbox" name="spam3"> Заработай миллион за два дня!</label>
 
             <p>На сколько сложная задача:</p> <!-- is this task difficult?  itd -->
-            <label><input type="radio" name="task" value="easy"> Совсем нет</label><br>
-            <label><input type="radio" name="task" value="mid"> Так себе</label><br>
-            <label><input type="radio" name="task" value="hard"> Еле справились</label><br>
+            <label><input type="radio" name="task" value="easy"> Совсем нет</label>
+            <label><input type="radio" name="task" value="mid"> Так себе</label>
+            <label><input type="radio" name="task" value="hard"> Еле справились</label>
         </fieldset>
         <input type="submit" value="Отправить">
     </form>
